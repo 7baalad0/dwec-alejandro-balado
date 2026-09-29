@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* Cabecera */
+header {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+header p {
+font-size: 24px;
+font-weight: bold;
+}
+
+/* Calculadora */
+main {
+background-color: white;
+width: 90%;
+max-width: 400px;
+margin: 40px auto;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+
+}
+
+label {
+font-weight: bold;
+margin-top: 5px;
+}
+
+input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 16px;
+}
+
+button {
+margin-top: 15px;
+padding: 12px;
+border: none;
+border-radius: 6px;
+background-color: #333;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #555;
+}
+
+/* Resultado */
+.aprobado {
+color: green;
+font-weight: bold;
+text-align: center;
+margin-top: 15px;
+}
+
+.suspenso {
+color: red;
+font-weight: bold;
+text-align: center;
+margin-top: 15px;
+}
+
+/* Pie de página */
+footer {
+margin-top: auto;
+background-color: #333;
+color: white;
+text-align: center;
+padding: 15px;
+font-size: 14px;
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+main {
+width: 95%;
+padding: 20px;
+margin: 25px auto;
+}
+
+
+header p {
+    font-size: 20px;
+}
+
+footer {
+    font-size: 12px;
+}
+
+
+}
