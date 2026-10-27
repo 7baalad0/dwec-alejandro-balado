@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="pruebas.js" defer></script>
+  <link rel="icon" href="data:,">
+  <title>Trabajando con el DOM</title>
+</head>
+<body>
+
+  <header id="cabecera">
+    <h1>IES de Teis</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#" class="enlace-menu">Inicio</a></li>
+        <li><a href="#" class="enlace-menu">Cursos</a></li>
+        <li><a href="#" class="enlace-menu">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cursos">
+      <h2>Cursos disponibles</h2>
+      <ul id="lista-cursos">
+        <li class="curso destacado" data-nivel="superior" data-plazas="0">DAW - Desarrollo de Aplicaciones Web</li>
+        <li class="curso" data-nivel="superior" data-plazas="6">DAM - Desarrollo de Aplicaciones Multiplataforma</li>
+        <li class="curso" data-nivel="medio" data-plazas="3">SMR - Sistemas Microinformáticos y Redes</li>
+      </ul>
+    </section>
+
+    <section id="alumnos">
+      <h2>Alumnos matriculados</h2>
+      <table id="tabla-alumnos">
+        <thead>
+          <tr><th>Nombre</th><th>Curso</th></tr>
+        </thead>
+        <tbody>
+          <tr class="alumno"><td>Juan Fernández</td><td>DAW</td></tr>
+          <tr class="alumno"><td>María Fernández</td><td>DAM</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto">
+      <h2>Formulario de contacto</h2>
+      <form id="formulario-contacto">
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+        <input type="email" id="email" name="email" placeholder="Tu email">
+        <button type="submit" id="btn-enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="pie">
+    <p class="aviso-legal">© 2026 IES Teis</p>
+  </footer>
+
+  <script src="pruebas.js"></script>
+</body>
+</html>

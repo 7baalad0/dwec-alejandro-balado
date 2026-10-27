@@ -70,7 +70,7 @@ const aplicarATodos = (lista, fn) => {
 
 // 12
 
-const notas =[];
+const notas =[4,8,6,9,3];
 
 const aprobadas = notas.filter(n => n >= 5);
 
